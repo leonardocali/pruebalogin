@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EjemploAplicacion</title>
+    <!--BOOTSTRAP CDN  -->
+    <link rel="stylesheet" href="https://bootswatch.com/4/litera/bootstrap.min.css">
+</head>
+<body>
+    <!--NAVEGACION -->
+    <nav class="navbar navbar-light bg-light">
+        <a href="/" class="navbar-brand">
+            Ingreso Producto
+       </a>     
+    </nav>
+    <div class="container">
+        <!--APLICACION-->
+        <div id="App" class="row pt-5"> 
+            <div class="col-md-4">
+                <div class="card">
+                        <div class="card-header">
+                             <h4>Ingresa un producto</h4>   
+                        </div>                     
+                        <form id="formProduct" class="card-body">
+                            <div class="form-group">
+                                 <input type="text" id="nombre" placeholder="Nombre del prodcuto" class="form-control"> 
+                            </div>
+                            <div class="form-group">
+                                    <input type="number" step=0.01 id="precio" placeholder="Ingresa el valor" class="form-control"> 
+                            </div>
+                            <div class="form-group">
+                                    <input type="number" id="year" value=2019 min=1900 placeholder="año del producto" class="form-control">                              
+                            </div>
+                            <input type="submit" value="Guardar" class="btn btn-primary btn-block">
+                        </form>                        
+                </div>   
+             </div>      
+             <div id="productolista" class="col-md-8"></div>          
+            </div>                             
+        </div>        
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
